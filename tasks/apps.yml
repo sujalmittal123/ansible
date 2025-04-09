@@ -1,0 +1,43 @@
+- name: Install essential applications using pacman
+  become: yes
+  package:
+    name:
+      - telegram-desktop
+      - yt-dlp
+      - mpv
+      - flatpak
+      - aria2
+      - auto-cpufreq
+      - appimagelauncher
+      - btop
+      - htop
+      - fastfetch
+      - gparted
+      - hugo
+      - jdk-openjdk
+      - nvtop
+      - onedrive-abraunegg
+      - stremio
+      - tailscale
+      - p7zip
+      - uwufetch
+      - zoom
+      - visual-studio-code-bin
+      - vesktop
+      - qbittorrent-enhanced
+      - cloudflare-warp-bin
+      - ncdu
+      - obsidian
+      - thunar
+    state: present
+  tags:
+    - essentials
+    - install
+    - pacman
+#- name: Install AUR application using yay
+#  become: no
+#  command: yay -S --noconfirm localsend-bin
+#  tags:
+#    - essentials
+#    - install
+#    - aur
