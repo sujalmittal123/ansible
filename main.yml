@@ -10,11 +10,11 @@
       pacman:
         update_cache: yes
 
-  tasks:
-    - name: Include SSH tasks
-      include_tasks: tasks/ssh.yml
-      tags:
-        - ssh
+    # tasks:
+    #   - name: Include SSH tasks
+    #     include_tasks: tasks/ssh.yml
+    #     tags:
+    #       - ssh
 
     - name: Include Yay tasks
       include_tasks: tasks/yay.yml
